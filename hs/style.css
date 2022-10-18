@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+nav{
+    max-width: 100rem;
+    padding: 1rem;
+    background-color: transparent;
+    display: flex;
+}
+nav img{
+    margin-left: 3rem;
+    margin-top: -1rem;
+    height: 4rem;
+}
+nav div{
+    margin-left: 30rem;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-left: 2rem;
+}
+nav:hover{
+    background-color: white;
+}
+
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9999;
+    width: 100%;
+    height: 55rem;
+    background-size: 100% 100%;
+    background-image: url("https://ae01.alicdn.com/kf/Hda94ca41d6514a2da4ea25526432a7aco/Men-Watches-2022-Luxury-Male-Elegant-Ultra-Thin-Watch-Men-Business-Stainless-Steel-Mesh-Quartz-Watch.jpg");
+    animation: slider 8s infinite linear;
+}
+
+@keyframes slider{
+    0%{
+        background-image: url(https://ae01.alicdn.com/kf/Hda94ca41d6514a2da4ea25526432a7aco/Men-Watches-2022-Luxury-Male-Elegant-Ultra-Thin-Watch-Men-Business-Stainless-Steel-Mesh-Quartz-Watch.jpg);
+    }
+    25%{
+        background-image: url(https://m.media-amazon.com/images/I/71VjM5LOeYL._AC_UL1500_.jpg);
+    }
+    50%{
+        background-image: url(https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/2:3/w_1200,h_1800,c_limit/Evolution-Luxury-Watches-Oris.jpg);
+    }
+    75%{
+        background-image: url(https://www.lifestyle-collection.com.pk/wp-content/uploads/2021/06/Fashion-watches.jpg);
+    }
+}
+
+.main{
+    margin-top: 55rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2rem;
+}
+.cards{
+    width: 90%;
+    border: 2px solid white;
+}
+.cards img{
+    width: 100%;
+}
+.cards h2{
+    padding: 0.5rem;
+}
+.cards p{
+    padding: 0.5rem;
+}
+
+/* FOOTER */
+footer{
+    padding: 2rem 0;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+.links{
+    padding-right: 2rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+.social{
+    border-left: 5px solid white;
+    padding-left: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.social i{
+    font-size: 1.5rem;
+    color: white;
+    margin: 0.3rem;
+}
+
+.links p:hover{
+    color: blue;
+}
+.social i:hover{
+    color: blue;
+}
